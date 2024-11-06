@@ -17,6 +17,8 @@ services:
       - 127.0.0.1:8080:1080
     networks:
       - globalprotect
+    environment:
+      - QTWEBENGINE_CHROMIUM_FLAGS=--no-sandbox
  
 networks:
   globalprotect:
